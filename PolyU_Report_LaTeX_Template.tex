@@ -1,0 +1,188 @@
+% PolyU EEE6203 Research Seminar III report template
+% Replace every placeholder in the metadata block and body before submission.
+% Keep Logo.jpg in the same folder as this .tex file.
+
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=blue,citecolor=blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+% Keep generated PDF metadata generic and free of personal author information.
+\hypersetup{
+    pdftitle={Research Seminar Report Template},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={}
+}
+
+% -----------------------------------------------------------------------------
+% EDIT THESE FIELDS
+% -----------------------------------------------------------------------------
+\newcommand{\coursecode}{EEE6203}
+\newcommand{\coursename}{Research Seminar III}
+\newcommand{\studentname}{Your Name}
+\newcommand{\studentid}{Your Student ID}
+\newcommand{\departmentname}{EEE}
+\newcommand{\seminartitle}{Your Seminar Title}
+\newcommand{\speakerinfo}{Speaker Name (Affiliation)}
+\newcommand{\seminardate}{Day Month Year (Day of Week)}
+\newcommand{\submitdate}{\today}
+
+% Visible guidance text. Replace or remove all \placeholder{...} text.
+\newcommand{\placeholder}[1]{\textcolor{gray}{\textit{#1}}}
+
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\onehalfspacing
+\setlength{\emergencystretch}{2em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{15pt}
+\lhead{\studentname\ (\studentid)}
+\rhead{\textit{\coursecode\ \coursename}}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+
+\titleformat{\section}
+{\normalfont\Large\bfseries}
+{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+
+\titleformat{\subsection}
+{\normalfont\large\bfseries}
+{\thesubsection}{1em}{}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+
+    \includegraphics[width=0.3\textwidth]{Logo.jpg}\\[2cm]
+
+    {\large \textsc{The Hong Kong Polytechnic University}}\\[0.5cm]
+
+    \rule{\linewidth}{0.5mm} \\[0.4cm]
+
+    {\huge \bfseries Research Seminar Report} \\[0.5cm]
+    {\Large \textbf{\coursecode\ \coursename}} \\[0.4cm]
+
+    \rule{\linewidth}{0.5mm} \\[1.5cm]
+
+    \begin{flushleft}
+        \large
+        \textbf{Seminar Title:} \seminartitle \\[0.5em]
+        \textbf{Speaker:} \speakerinfo \\[0.5em]
+        \textbf{Seminar Date:} \seminardate \\[0.5em]
+    \end{flushleft}
+
+    \vspace{1.5cm}
+
+    \begin{minipage}{0.6\textwidth}
+        \centering
+        \large
+        \textbf{Submitted by:} \\[0.5cm]
+        \studentname\\
+        Student ID: \studentid \\
+        Department: \departmentname
+    \end{minipage}\\[2cm]
+
+    \vfill
+
+    {\large \textbf{Date Submitted:} \submitdate} \\[1cm]
+
+\end{titlepage}
+
+\clearpage
+\pagenumbering{arabic}
+
+\section{Introduction}
+
+\placeholder{Write two or three paragraphs that establish why the seminar topic matters. Introduce the engineering or societal problem, explain the limitations of conventional approaches where relevant, and state the seminar's central theme.}
+
+\placeholder{Conclude the introduction with a concise roadmap of the report. Briefly indicate that the report will review the seminar content, evaluate its technical strengths and limitations, and discuss wider applications or social impact.}
+
+\section{Seminar Content Overview}
+
+\subsection{Research Background and Motivation}
+
+\placeholder{Summarize the problem setting and application context objectively. Identify the practical need or research gap addressed by the speaker, and define essential terminology before introducing technical details.}
+
+\subsection{Core Framework or System Model}
+
+\placeholder{Describe the main framework, architecture, system model, or analytical viewpoint presented in the seminar. Introduce the roles of the main components and explain how information, signals, decisions, or data flow between them.}
+
+% Optional figure example:
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.82\linewidth]{your-figure-file}
+%     \caption{A concise, descriptive caption.}
+%     \label{fig:framework}
+% \end{figure}
+
+\subsection{Key Algorithms or Technical Modules}
+
+\placeholder{Explain the main methods in a logical order. State the purpose of each algorithm or module, its inputs and outputs, and the assumptions required. Use equations only when they materially improve the explanation.}
+
+% Optional compact list:
+% \begin{itemize}[leftmargin=2em]
+%     \item \textbf{Module A:} State its function and technical role.
+%     \item \textbf{Module B:} State its function and technical role.
+% \end{itemize}
+
+\subsection{Validation, Results, or Representative Case Studies}
+
+\placeholder{Summarize how the speaker validated the approach. Report the experimental or simulation setting, dataset, baseline, and main measured outcome when these details were provided. Do not invent numerical results that were not shown in the seminar materials.}
+
+\section{Technical Analysis and Reflection}
+
+\subsection{Key Strengths}
+
+\placeholder{Move beyond summary and evaluate the strongest theoretical or engineering contributions. Explain why the approach is effective, interpretable, scalable, robust, or practically meaningful, using evidence from the seminar.}
+
+\subsection{Limitations and Open Challenges}
+
+\placeholder{Discuss assumptions, data requirements, computational cost, scalability, deployment constraints, validation gaps, or unresolved tradeoffs. Distinguish limitations stated by the speaker from your own reasoned observations.}
+
+\subsection{Relevance to My Research}
+
+\placeholder{Explain how the seminar connects to your own research direction or training in electrical and electronic engineering. Identify transferable methods, system-level insights, or open questions rather than making only a general statement of interest.}
+
+\section{Social Impact and Applications}
+
+\placeholder{Discuss realistic application domains and broader consequences. Depending on the seminar topic, consider industrial value, public safety, environmental sustainability, healthcare, transportation, communications, energy, accessibility, fairness, privacy, or governance.}
+
+\placeholder{Balance potential benefits with implementation risks. Explain what technical or institutional safeguards would be required for responsible real-world deployment.}
+
+\section{Conclusion}
+
+\placeholder{Synthesize the seminar's central technical insight and the report's main evaluation. End with a concise research-facing reflection or practical takeaway; do not merely repeat the introduction.}
+
+\clearpage
+\begin{thebibliography}{99}
+
+\bibitem{ref1}
+Author(s), ``Paper title,'' \textit{Journal or Conference}, vol.~x, no.~x, pp.~xx--xx, year.
+
+\bibitem{ref2}
+Author(s), \textit{Book or Report Title}. City, Country: Publisher, year.
+
+\bibitem{ref3}
+Organization, ``Webpage or document title,'' year. [Online]. Available: \url{https://example.com}
+
+\end{thebibliography}
+
+\end{document}
